@@ -64,7 +64,7 @@ def aternityData():
                 print('Completed retrieving '+ str(totalRows) +' records for timeframe'+ str(timeFrame))
                 time.sleep(5)        
     except Exception as e:
-        InternalCommon.sendEmail("Encountered error <b>" + str(e) + "</b> when running AternityToWatchdog on server " + socket.gethostname() + " in path " + os.getcwd() + ".","Error in AternityToWatchdog","donotreply@xxxx.com",config.get('AppSettings','ErrorEmailDistribution'))
+        InternalCommon.sendEmail("Encountered error <b>" + str(e) + "</b> when running Aternitydata on server " + socket.gethostname() + " in path " + os.getcwd() + ".","Error in Aternitydata","donotreply@xxxx.com",config.get('AppSettings','ErrorEmailDistribution'))
         raise e   
 
 if __name__ == "__main__":
